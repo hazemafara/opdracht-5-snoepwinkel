@@ -1,0 +1,95 @@
+html{font-size: 18px;}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    background-color: #acacac;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+body > div.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 70%;
+    height: 80%;
+
+    background-color: #8c8c8c;
+}
+
+div.container > h1.title{
+    margin: .5rem 0;
+    padding: 1rem 0;
+    width: 50%;
+
+    font-weight: 900;
+    text-align: center;
+    background-color: #acacac;
+    color: #000;
+}
+
+table{
+    background-color: #acacac;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+table thead tr th{
+    background-color: #acacac;
+    color: #000;
+    font-weight: 900;
+    padding: .5rem;
+    text-align: center;
+}
+
+table tr{
+    padding: .5rem;
+    text-align: center;
+    transition: background-color .1s ease-in-out;    
+}
+
+table tr:nth-child(even){
+    background-color: #8c8c8c;
+}
+
+table tr:last-child{
+    border-bottom: none;
+}
+
+table tr:hover{
+    background-color: #777777;
+}
+
+table tr td{
+    padding: .2rem;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+
+    transition: color .1s ease-in-out;
+}
+
+a.danger{
+    color: #f00;
+}
+
+a:hover{
+    color: #ffbb00;
+    text-decoration: underline;
+}
